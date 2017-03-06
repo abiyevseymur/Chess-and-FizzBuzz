@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>04.03.2017</title>
+</head>
+
+<body>
+    <script>
+     
+        var char = '';
+        var bosluq = '';
+        var a = Number(prompt("number of rows"));
+        for (var i = 0; i < a; i++) {
+            char = char + '#';
+            for (var j = 0; j < a*2 - (i + 1) * 2; j++) {
+                bosluq = bosluq + '&nbsp;&nbsp;';
+            }
+            document.write(char + bosluq + char + '<br>');
+            bosluq = '';
+        }
+    </script>
+</body>
+
+</html>
